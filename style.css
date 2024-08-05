@@ -1,0 +1,53 @@
+body{
+    background: url("images/annie-spratt-bg.jpg") ;
+   
+    
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    
+}
+header{
+    display: flex;
+}
+#textbooks,#drama,#history,#poetry,#fiction,#fantasy,#sci-fi{
+    width: 70%;
+    height: min(25vh,15rem);
+    margin: 50px;
+    border-radius: 20px;
+}
+#textbooks{
+    
+    background: url("images/science.jpg") ;
+    
+}
+#drama{
+    
+    background: url("images/akelex-one-final-repentance.jpg") ;
+}
+#history{
+    
+    background: url("images/history.jpg") ;
+}
+#poetry{
+    
+    background: url("images/poetry.jpg") ;
+}
+#fiction{
+    
+    background: url("images/fiction.jpg") ;
+}
+#fantasy{
+    
+    background: url("images/dragon.jpg") ;
+}
+#sci-fi{
+    
+    background: url("images/sci-fi.jpg") ;
+}
+
+footer{
+    display: flex;
+    
+}
