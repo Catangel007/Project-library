@@ -1,6 +1,6 @@
 body{
      background: hsl(54, 54%, 92%); 
-
+ width: 100vw;
    margin: 0;
     
 }
@@ -23,21 +23,20 @@ header{
     background-color:hsl(52, 92%, 80%);
     justify-content: space-between;
     padding: 1rem;
-    width: 100%
+    width: 100vw
 
 }
 nav{
+    width: 50%;
+}
+nav ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
-}
-nav ul li {
-    margin: 0 1rem;
 }
 
 .search{
-    width: 25%;
+    width: 50%;
     display: flex;
 }
 input{
@@ -101,17 +100,23 @@ main>h1{
 }
 
 footer{
-    display: flex;
+    height: 10vh;
     background-color:hsl(52, 92%, 80%) ;
  width: 100%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ 
     
 }
+
 
 a{
 height: 30px;
 width: 30px;
 margin-right: 50px;
 text-decoration: none;
+color: black;
 }
 
 ul{
@@ -119,6 +124,13 @@ ul{
     list-style-type: none;
     align-items:center ;
     justify-content:flex-end ;
+}
+footer ul{
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-evenly;
+    
 }
 
 .book-setting{
