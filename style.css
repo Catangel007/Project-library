@@ -1,5 +1,5 @@
 body{
-    /* background: url("images/annie-spratt-bg.jpg"); */
+     background: hsl(54, 54%, 92%); 
 
    margin: 0;
     
@@ -11,10 +11,15 @@ body{
 }
 header{
     display: flex;
-    background-color: gainsboro;
+    background-color:hsl(52, 92%, 80%);
 }
 h1{
+    text-align: start;
+    margin-left: 1rem;
+}
+main>h1{
     text-align: center;
+
 }
 #textbooks,#drama,#history,#poetry,#fiction,#fantasy,#sci-fi{
     width: 70%;
@@ -57,14 +62,16 @@ h1{
 
 footer{
     display: flex;
-    background-color:lemonchiffon ;
+    background-color:hsl(52, 92%, 80%) ;
     
 }
+
 a{
 height: 30px;
 width: 30px;
 margin-right: 50px;
 }
+
 ul{
     display: flex;
     list-style-type: none;
@@ -77,6 +84,6 @@ ul{
     opacity: .40;
     grid-row:2/3;
     grid-column: 1/2;
-    border-radius-bottom: 20px;
-    
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; 
 }
