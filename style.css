@@ -5,21 +5,61 @@ body{
     
 }
 .logo{
-    height: 50px;
-    width: 50px;
+   display: flex;
+   flex-direction: row;
+   color: rgb(214, 148, 49);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     letter-spacing: 3px;
+     font-size:1.5rem;
+     justify-content: space-between;
+     align-items: center;
+
+
     
 }
+
 header{
     display: flex;
     background-color:hsl(52, 92%, 80%);
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+
+.search{
+    width: 25%;
+    display: flex;
+}
+input{
+    border:2px solid rgb(214, 148, 49);
+    border-radius: 12px;
+    width: 90%;
 }
 h1{
     text-align: start;
     margin-left: 1rem;
+   
+}
+nav button{
+    background-color: hsl(54, 54%, 92%);
+    border:2px solid rgb(214, 148, 49);
 }
 main>h1{
     text-align: center;
-
+    color: rgb(214, 148, 49);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     letter-spacing: 3px;
+     font-size: 3rem;
 }
 #textbooks,#drama,#history,#poetry,#fiction,#fantasy,#sci-fi{
     width: 70%;
@@ -63,6 +103,7 @@ main>h1{
 footer{
     display: flex;
     background-color:hsl(52, 92%, 80%) ;
+ width: 100%;
     
 }
 
@@ -70,6 +111,7 @@ a{
 height: 30px;
 width: 30px;
 margin-right: 50px;
+text-decoration: none;
 }
 
 ul{
@@ -86,4 +128,5 @@ ul{
     grid-column: 1/2;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px; 
+    width: 100%;
 }

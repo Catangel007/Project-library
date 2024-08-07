@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-library</title>
+    <link rel="shortcut icon" type="image/svg" href="images/airballoon.svg"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
   <header>
-    <div>
-        <div class="logo"><img src="images/airballoon.svg" alt="" height="40px" width="40px" color="white"></div>
+    <div class="logo">
+        <div ><img src="images/airballoon.svg" alt="" height="40px" width="40px"></div>
          Celeste library
         </div>
     <nav>
         <ul>
-        <li><img src="images/magnify.png" alt="" height="30px" width="30px">
+        <li class="search"><img src="images/magnify.png" alt="search button" height="30px" width="30px">
             <input type="text">
         </li>
-        <li>Bookshop <img src="images/cart.png" alt="" height="30px" width="30px"> </li>
-        <button><img src="images/plus-thick.png" alt="" height="30px" width="30px"></button>
+        <li> <img src="images/cart.png" alt="shopping button" height="30px" width="30px"> </li>
+        <button class="add"><img src="images/plus-thick.png" alt="add book to library" height="30px" width="30px"></button>
     </ul>
 </nav>
   </header>
@@ -33,7 +34,7 @@
         <ul>
             <li><a href="textbooks.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
             <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
+            <li class="add add-textbooks"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
         </ul>
     </div>
 </div>
@@ -43,7 +44,7 @@
         <ul>
             <li><a href="drama.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
             <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
+            <li class="add add-drama"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
         </ul>
     </div>
 </div>
@@ -53,7 +54,7 @@
         <ul>
             <li><a href="history.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
             <li><a href=""><img src="images/share-variant.png" alt="share icon"height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
+            <li class="add add-history"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
         </ul>
 </div>
 </div>
@@ -63,7 +64,7 @@
         <ul>
             <li><a href="poetry.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
             <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
+            <li class="add add-poetry"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
         </ul>  
     </div>
 </div>
@@ -73,7 +74,7 @@
         <ul>
             <li><a href="fiction.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
             <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
+            <li class="add add-fiction"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
         </ul>
     </div>
 </div>
@@ -83,7 +84,7 @@
         <ul>
             <li><a href="fantasy.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
             <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
+            <li class="add add-fantasy"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
         </ul>
     </div>
 </div>
@@ -93,7 +94,7 @@
         <ul>
             <li><a href="sci-fi.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
             <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
+            <li class="add add-sci-fi"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
         </ul>
     </div>
 </div>
@@ -104,10 +105,11 @@
 
   </main>
 
-  <footer>&copy;2024 Catangel007
+  <footer>
     <ul>
-    <li><a href="http://">Contact us</a></li>
-    <li><a href=""> About</a></li>
+      <li>&copy;2024 Catangel007</li>
+      <li><a href="">Contact us</a></li>
+      <li><a href=""> About</a></li>
     </ul>
     
   </footer>
