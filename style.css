@@ -103,11 +103,14 @@ footer{
     height: 10vh;
     background-color:hsl(52, 92%, 80%) ;
  width: 100%;
- display: flex;
- justify-content: space-around;
- align-items: center;
+ 
  
     
+}
+div #flower{
+    height:0;
+    width: 100%;
+    background-color: aqua;
 }
 
 
