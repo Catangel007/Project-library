@@ -61,7 +61,7 @@ main>h1{
      font-size: 3rem;
 }
 #textbooks,#drama,#history,#poetry,#fiction,#fantasy,#sci-fi{
-    width: 70%;
+    width: 70vw;
     height: min(25vh,15rem);
     margin: 50px;
     box-shadow:5px 5px 20px gray;
@@ -107,10 +107,10 @@ footer{
  
     
 }
-div #flower{
-    height:0;
+#flowers img{
+    height:30rem;
     width: 100%;
-    background-color: aqua;
+    
 }
 
 
@@ -145,3 +145,24 @@ footer ul{
     border-bottom-right-radius: 20px; 
     width: 100%;
 }
+
+main{
+    display: grid;
+    grid-template: 1fr/ 1fr .5fr;
+}
+.genre{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.new-additions{
+   
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color:blanchedalmond;
+   
+}
+ iframe{
+    margin: 2rem 0;
+
+
+ }
