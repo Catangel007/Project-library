@@ -1,8 +1,9 @@
- let title = document.querySelector("#title.input");
- let author =document. querySelector("#author-input");
- let genre = document. querySelector("#genre-input");
- let pages =document. querySelector("#page-input");
- const addBook = document. querySelector("#add-book");
+ let titleInput = document.querySelector("#title.input");
+ let authorInput =document. querySelector("#author-input");
+ let genreInput = document. querySelector("#genre-input");
+ let pagesInput =document. querySelector("#pages-input");
+ let addBook = document. querySelector("#add-book");
+
 
 
 
@@ -72,14 +73,25 @@ function Book(title, author, genre, pages) {
     }
   };
 }
+titleInput= titleInput.textContent;
+  authorInput= authorInput.textContent;
+  genreInput= genreInput.textContent;
+  pagesInput = pagesInput.textContent
 
 //function to take user input and store in an array
-function addBookToLibrary() {
-  // do stuff here
-  addBook.addEventListener("click",()=>{
-  let book = new Book(title,author,genre,pages);
-  myLibrary === myLibrary.concat(book);
+function addBookToLibrary(){
   
+
+  
+
+  addBook.addEventListener("click",()=>{
+    console.log('you clicked me');
+  let book = new Book(titleInput,authorInput,genreInput,pagesInput);
+  console.log(book);
+  myLibrary === myLibrary.push(book);
+  console.log(myLibrary)
  })
    
 }addBookToLibrary();
+console.log("library work please")
+
