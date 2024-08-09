@@ -26,7 +26,36 @@
   </header>
   <header class="sub-header">
   <h1>library</h1>
-  <button class="add"><img src="images/plus-thick.png" alt="add book to library" height="30px" width="30px"></button><hr>
+  <button class="add-new"><img src="images/plus-thick.png" alt="add book to library" height="30px" width="30px">
+    <dialog open >
+         <div class="book-display"> <button class="add"><img src="images/plus-thick.png" alt="add book to library" height="30px" width="30px"></button></div>
+        <form action="" method="get" >
+            <label for="title">Title:</label>
+            <input type="text" id="title-input" name="title">
+
+            <label for="author">Author:</label>
+            <input type="text" id="author-input" name="author">
+
+            <label for="genre">Genre:</label>
+            <select name="genre" id="genre">
+                <option value="">Choose Genre</option>
+                <option value="textbooks">Textbooks</option>
+                <option value="drama">Drama</option>
+                <option value="history">History</option>
+                <option value="poetry">Poetry</option>
+                <option value="fiction">Fiction</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="sci-fi">Sci-fi</option>
+            </select>
+            <input type="text" id="genre-input" name="genre">
+
+            <label for="pages">Pages:</label>
+            <input type="number" id="pages-input" name="pages">
+
+          <button type="submit" id="add-book">Add book</button>
+        </form>
+    </dialog>
+</button><hr>
 </header>
   <main>
 
@@ -140,6 +169,6 @@
     
   </footer>
 
-    <script src="lib.js" defer></script>
+    <script src="lib.js"></script>
 </body>
 </html>
