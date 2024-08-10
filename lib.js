@@ -1,11 +1,31 @@
- let titleInput = document.querySelector("#title.input");
- let authorInput =document. querySelector("#author-input");
- let genreInput = document. querySelector("#genre-input");
- let pagesInput =document. querySelector("#pages-input");
- let addBook = document. querySelector("#add-book");
+//  let titleInput = document.querySelector("#title.input");
+//  let authorInput =document. querySelector("#author-input");
+//  let genreInput = document. querySelector("#genre-input");
+//  let pagesInput =document. querySelector("#pages-input");
+ const addBook = document. querySelector("#add-book");
+ const addNew = document. querySelector(".add-new");
+ const dialog = document. querySelector(".modal");
+ let bookDisplay = document .querySelector(".book-display");
+ const addBtnDisplay = document .querySelector(".add");
+ let genreInput = document .querySelector("#genre-input");
+ const select = document .querySelector("select")
+
+ // Update input display for genre
+
+  select.addEventListener("change", () =>{
+    
+  if(select.value === "default"){
+   
+  } else //if(select.value === 'textbooks'||'poetry'||'drama'||'fiction'||'fantasy'||'sci-fi'||'history')
+  {
+    genreInput.value = select.value;
+    genreInput.textContent("genreInput.value");
+  }
+})
 
 
-
+ 
+     //genreInput.value === genreInput.textContent;
 
 
 
@@ -73,10 +93,10 @@ function Book(title, author, genre, pages) {
     }
   };
 }
-titleInput= titleInput.textContent;
-  authorInput= authorInput.textContent;
-  genreInput= genreInput.textContent;
-  pagesInput = pagesInput.textContent
+// titleInput= titleInput.textContent;
+//   authorInput= authorInput.textContent;
+//   genreInput= genreInput.textContent;
+//   pagesInput = pagesInput.textContent
 
 //function to take user input and store in an array
 function addBookToLibrary(){
