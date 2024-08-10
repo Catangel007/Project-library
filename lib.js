@@ -1,28 +1,49 @@
-//  let titleInput = document.querySelector("#title.input");
-//  let authorInput =document. querySelector("#author-input");
-//  let genreInput = document. querySelector("#genre-input");
-//  let pagesInput =document. querySelector("#pages-input");
+  let titleInput = document.querySelector("#title.input");
+ let authorInput =document. querySelector("#author-input");
+  let genreInput = document. querySelector("#genre-input");
+  let pagesInput =document. querySelector("#pages-input");
+
+
  const addBook = document. querySelector("#add-book");
  const addNew = document. querySelector(".add-new");
- const dialog = document. querySelector(".modal");
+ const dialog = document. querySelector("dialog");
  let bookDisplay = document .querySelector(".book-display");
  const addBtnDisplay = document .querySelector(".add");
- let genreInput = document .querySelector("#genre-input");
- const select = document .querySelector("select")
+ const select = document .querySelector("select");
+
+
+
+
+
+//  titleInput= titleInput.value;
+//  authorInput= authorInput.value;
+//  genreInput= genreInput.value;
+//  pagesInput= pagesInput.value;
+
 
  // Update input display for genre
-
-  select.addEventListener("change", () =>{
-    
+  select.addEventListener("change", () =>{ 
   if(select.value === "default"){
-   
-  } else //if(select.value === 'textbooks'||'poetry'||'drama'||'fiction'||'fantasy'||'sci-fi'||'history')
-  {
+   "null"
+  } else{
     genreInput.value = select.value;
     genreInput.textContent("genreInput.value");
   }
 })
 
+dialog.addEventListener("close",(e) => {
+  let output = `${dialog.returnValue}`;
+  console.log(output);
+})
+
+addNew.addEventListener("click",()=>{
+  dialog.showModal()
+})
+
+addBook.addEventListener("click", (event) => {
+  event.preventDefault();
+  dialog.close(titleInput.value+ authorInput.value+genreInput.value+pagesInput.value)
+})
 
  
      //genreInput.value === genreInput.textContent;

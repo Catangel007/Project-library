@@ -51,7 +51,7 @@ h1{
 }
 nav button{
     background-color: hsl(54, 54%, 92%);
-    border:2px solid rgb(214, 148, 49);
+    border:2px solid hsl(36, 67%, 52%);
 }
 main>h1{
     text-align: center;
@@ -112,7 +112,29 @@ footer{
     width: 100%;
     
 }
+.sub-header{
+    
+    display: flex;
+   flex-direction: row;
+   background-color:hsl(52, 92%, 80%);
+   color: rgb(214, 148, 49);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     letter-spacing: 3px;
+     font-size:1.5rem;
+     justify-content: space-between;
+     align-items: center;
+}
+header h1{
+   color:hsl(36, 67%, 52%) ;
+}
 
+h1+button{
+    background-color:hsl(54, 54%, 92%) ;
+    border: 2px solid hsl(36, 67%, 52%);
+    height: 3rem;
+    width: 4rem;
+    
+}
 
 a{
 height: 30px;
