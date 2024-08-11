@@ -37,12 +37,13 @@
 
 <dialog class="modal" >
     <div class="book-display"> <button class="add"><img src="images/plus-thick.png" alt="add book to library" height="30px" width="30px"></button></div>
+    <button class="close">x</button>
    <form  method="dialog" >
        <label for="title">Title:</label>
-       <input type="text" id="title-input" name="title" required>
+       <input type="text" id="title-input" name="title"  autofocus>
 
        <label for="author">Author:</label>
-       <input type="text" id="author-input" name="author" required>
+       <input type="text" id="author-input" name="author" >
 
        <label for="genre">Genre:</label>
        <select name="genre" id="genre">
@@ -55,10 +56,10 @@
            <option value="fantasy">Fantasy</option>
            <option value="sci-fi">Sci-fi</option>
        </select>
-       <input type="text" id="genre-input" name="genre" value="select" required>
+       <input type="text" id="genre-input" name="genre" value="select" >
 
        <label for="pages">Pages:</label>
-       <input type="number" id="pages-input" name="pages" required>
+       <input type="number" id="pages-input" name="pages" >
 
      <button type="submit" id="add-book">Add book</button>
    </form>

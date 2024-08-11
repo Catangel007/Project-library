@@ -10,7 +10,7 @@
  let bookDisplay = document .querySelector(".book-display");
  const addBtnDisplay = document .querySelector(".add");
  const select = document .querySelector("select");
-
+const closeBtn = document .querySelector(".close");
 
 
 
@@ -22,39 +22,43 @@
 
 
  // Update input display for genre
-  select.addEventListener("change", () =>{ 
-  if(select.value === "default"){
-   "null"
-  } else{
-    genreInput.value = select.value;
-    genreInput.textContent("genreInput.value");
-  }
-})
+   select.addEventListener("change", () =>{ 
+   if(select.value === "default"){
+    "null"
+   } else{
+     genreInput.value = select.value;
+     genreInput.textContent("genreInput.value");
+   }
+ });
 
-dialog.addEventListener("close",(e) => {
-  let output = `${dialog.returnValue}`;
-  console.log(output);
-})
+   dialog.addEventListener("close",(e) => {
+   let output = `${dialog.returnValue}`;
+   console.log(output);
+ });
 
+//button that brings up a form
 addNew.addEventListener("click",()=>{
   dialog.showModal()
-})
+});
 
-addBook.addEventListener("click", (event) => {
-  event.preventDefault();
-  dialog.close(titleInput.value+ authorInput.value+genreInput.value+pagesInput.value)
-})
+//use event.preventDefault to stop the form from submitting to server
+ addBook.addEventListener("click", (event) => {
+   event.preventDefault();
+   dialog.close(titleInput.value+ authorInput.value+genreInput.value+pagesInput.value)
+ });
 
- 
+ closeBtn.addEventListener("click", () => {
+  console.log("close");
+  dialog.close();
+ });
      //genreInput.value === genreInput.textContent;
 
 
 
 
-//write a function that loops though an array
-//display books on page
-//button that brings up a form
-//use event.preventDefault to stop the form from submitting to server
+//write a function that loops though an array to display books on page
+
+
 //Add a delete button to remove book from library
 
 
