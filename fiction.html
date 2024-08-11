@@ -4,106 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project-library</title>
+    <link rel="shortcut icon" type="image/svg" href="images/airballoon.svg"/>
     <link rel="stylesheet" href="style.css">
+    <script src="lib.js" defer></script>
 </head>
 <body>
     
   <header>
-    <div>
-        <div class="logo"><img src="images/airballoon.svg" alt="" height="40px" width="40px" color="white"></div>
+    <div class="logo">
+        <div ><img src="images/airballoon.svg" alt="" height="40px" width="40px"></div>
          Celeste library
         </div>
     <nav>
         <ul>
-        <li><img src="images/magnify.png" alt="search button" height="30px" width="30px">
-            <input type="text">
+        <li class="search"><img src="images/magnify.png" alt="search button" height="30px" width="30px">
+            <input type="text" placeholder="Search library">
         </li>
-        <li>Bookshop <img src="images/cart.png" alt="shopping button" height="30px" width="30px"> </li>
-        <button class="add"><img src="images/plus-thick.png" alt="add book to library" height="30px" width="30px"></button>
+        <li> <a href="https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155"><img src="images/cart.png" alt="shopping button" height="30px" width="30px"></a> </li>
+       
     </ul>
 </nav>
   </header>
-  <main>
-
-<h1>library<hr></h1>
-
-<div id="textbooks">
-    <div><h1>Textbooks</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="textbooks.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-textbooks"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-    </div>
-</div>
-<div id="drama">
-    <div><h1>Drama</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="drama.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-drama"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-    </div>
-</div>
-<div id="history">
-    <div><h1>History</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="history.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon"height="30px" width="30px"></a></li>
-            <li class="add add-history"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-</div>
-</div>
-<div id="poetry">
-    <div><h1>Poetry</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="poetry.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-poetry"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>  
-    </div>
-</div>
-<div id="fiction">
-    <div><h1>Fiction</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="fiction.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-fiction"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-    </div>
-</div>
-<div id="fantasy">
-    <div><h1>Fantasy</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="fantasy.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-fantasy"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-    </div>
-</div>
-<div id="sci-fi">
-    <div><h1>Sci-fi</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="sci-fi.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-sci-fi"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-    </div>
-</div>
+  
+  <div class="sub-header">
+  <h1>library</h1>
+  <button class="add-new"><img src="images/plus-thick.png" alt="add book to library" height="30px" width="30px">
 
 
+   
+</button>
+</div>
 
-
-
-  </main>
-
+   <div class="banner">
+    <img src="" alt="">
+    <div class="book-shelf"></div>
+   </div>
   <footer>
     <ul>
       <li>&copy;2024 Catangel007</li>
@@ -113,6 +48,6 @@
     
   </footer>
 
-    <script src="lib.js" defer></script>
+    
 </body>
 </html>

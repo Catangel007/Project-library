@@ -53,20 +53,6 @@ addNew.addEventListener("click",()=>{
  });
      //genreInput.value === genreInput.textContent;
 
-
-
-
-//write a function that loops though an array to display books on page
-
-
-//Add a delete button to remove book from library
-
-
-
-
-
-
-
 // sample objects to test array mylibrary
 let book1 ={
   name:"A Mind for Numbers",
@@ -140,3 +126,17 @@ function addBookToLibrary(){
 }addBookToLibrary();
 console.log("library work please")
 
+//write a function that loops though an array to display books on page
+
+function addBookToShelf(){
+  
+  for(let i = 0; i <= myLibrary.length; i++){
+  let card = document. createElement("div");
+  card.setAttribute("class",`book${i}`);
+  card.textContent(book1)
+}
+} addBookToShelf();
+
+
+
+//Add a delete button to remove book from library
