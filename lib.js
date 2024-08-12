@@ -134,9 +134,32 @@ function addBookToShelf(){
   let card = document. createElement("div");
   card.setAttribute("class",`book${i}`);
   card.textContent(book1)
+  let deleteBtn = document.createElement("button");
+  card.appendChild(deleteBtn);
+  function toDeleteBook (){
+   card = book.delete
+  }
 }
 } addBookToShelf();
 
+
+function arrangeBooks(){
+  if(Book.genre === "textbooks"){
+
+  } else if( Book.genre === "drama"){
+
+  } else if( Book.genre === "fiction"){
+    
+  }else if( Book.genre === "fantasy"){
+    
+  }else if( Book.genre === "history"){
+    
+  }else if( Book.genre === "sci-fi"){
+    
+  }else if( Book.genre === "poetry"){
+    
+  }
+}
 
 
 //Add a delete button to remove book from library
