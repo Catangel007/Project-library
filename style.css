@@ -135,8 +135,7 @@ h1+button{
     background-color:hsl(54, 54%, 92%) ;
     border: 2px solid hsl(36, 67%, 52%);
     height: 3rem;
-    width: 4rem;
-    
+    width: 4rem; 
 }
 
 a{
@@ -155,10 +154,8 @@ ul{
 }
 footer ul{
     display: flex;
-    width: 100%;
-    
-    justify-content: space-evenly;
-    
+    width: 100%; 
+    justify-content: space-evenly; 
 }
 
 .book-setting{
@@ -197,7 +194,6 @@ main{
     border: 4px solid hsl(36, 67%, 52%);
     height: 50vh;
     width: 50vw;
-    display: flex;
     border-radius: 20px;
     padding: 2rem;
     

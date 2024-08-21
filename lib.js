@@ -39,17 +39,21 @@ const closeBtn = document .querySelector(".close");
 //button that brings up a form
 addNew.addEventListener("click",()=>{
   dialog.showModal()
-  arrangeBooks();
+  
 });
 
 //use event.preventDefault to stop the form from submitting to server
  addBook.addEventListener("click", (event) => {
-   event.preventDefault();
-   dialog.close(titleInput.value+ authorInput.value+genreInput.value+pagesInput.value)
+  //  event.preventDefault();
+   addBookToLibrary();
+   arrangeBooks();
+   dialog.close();
+  
  });
 
  closeBtn.addEventListener("click", () => {
   console.log("close");
+  (titleInput && authorInput && genreInput && select && pagesInput)=== "";
   dialog.close();
  });
      //genreInput.value === genreInput.textContent;
@@ -91,7 +95,7 @@ const myLibrary = [book1,book2,book3,book4];
 
 
 function Book(title, author, genre, pages) {
-  // the constructor...
+
   this.title= title;
   this.author = author;
   this.genre = genre;
@@ -120,6 +124,7 @@ function addBookToLibrary(){
   myLibrary === myLibrary.push(book);
   console.log(myLibrary)
  })
+
   arrangeBooks(); 
 }addBookToLibrary();
 console.log("library work please")
@@ -145,17 +150,17 @@ function arrangeBooks(){
   if(Book.genre === "textbooks"){
     const textbooks= [].push(Book());
   } else if( Book.genre === "drama"){
-    const drama = [].push(Book())
+    const drama = [].push(Book());
   } else if( Book.genre === "fiction"){
-    const fiction = [].push(Book())
+    const fiction = [].push(Book());
   }else if( Book.genre === "fantasy"){
-    const fantasy = [].push(Book())
+    const fantasy = [].push(Book());
   }else if( Book.genre === "history"){
-    const history = [].push(Book())
+    const history = [].push(Book());
   }else if( Book.genre === "sci-fi"){
-    const sciFi = [].push(Book())
+    const sciFi = [].push(Book());
   }else if( Book.genre === "poetry"){
-    const poetry = [].push(Book())
+    const poetry = [].push(Book());
   }
  return { textbooks, drama, fiction, fantasy, history, sciFi, poetry}
 }
