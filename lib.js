@@ -1,12 +1,11 @@
   function addBookToLibrary(){
 
  
-  const myLibrary = [];
+  
 
   
 
 }
-
 
 function Book(title,author, pages, read){
   this.title = title;
@@ -67,12 +66,36 @@ Object.setPrototypeOf(Fiction.prototype, Book.prototype);
 
 
 TextBooks.genre= "text-books";
-SciFi.prototype.genre = "sci-fi";
-Poetry.prototype.genre = "poetry";
-Drama.prototype.genre = "drama";
-Age.prototype.genre = "history";
-Fantasy.prototype.genre = "fantasy";
-Fiction.prototype = "fiction";
+SciFi.genre = "sci-fi";
+Poetry.genre = "poetry";
+Drama.genre = "drama";
+Age.genre = "history";
+Fantasy.genre = "fantasy";
+Fiction.genre = "fiction";
+ let subway= 9;
+ let sunday= 7;
+const myLibrary = [ subway, sunday];
 
-console.log(Drama.prototype.genre);
-console.log(TextBooks.genre);
+// function addBookToLibrary(){
+  
+//   const book = new TextBooks(title.value,author.value,pages.value,read.value) ||
+//              new SciFi(title.value,author.value,pages.value,read.value) ||
+//              new Poetry(title.value,author.value,pages.value,read.value)  ||
+//              new Drama(title.value,author.value,pages.value,read.value) ||
+//              new Age(title.value,author.value,pages.value,read.value)  ||
+//              new Fantasy(title.value,author.value,pages.value,read.value)||
+//              new Fiction(title.value,author.value,pages.value,read.value);
+            
+
+//              myLibrary = myLibrary.push(book);
+
+// return book;
+// }addBookToLibrary();
+
+
+function displayBook(){
+
+  myLibrary.forEach((book)=>{
+    console.log(book);
+  }) ;
+}displayBook();
