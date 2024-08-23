@@ -28,7 +28,7 @@
   
   <div class="sub-header">
   <h1>library</h1>
-  <button class="add-new"><img src="images/plus-thick.png" alt="add book to library" height="30px" width="30px">
+  <button class="add"><img src="images/plus-thick.png" alt="add book to library" height="30px" width="30px">
 
 
    
@@ -38,34 +38,30 @@
 <dialog >
     
     <button class="close">x</button>
-   <form method="dialog">
+   <form id="pop-up" method="dialog">
        <label for="title">Title:</label>
        <input type="text" id="title-input" name="title"  autofocus>
 
        <label for="author">Author:</label>
        <input type="text" id="author-input" name="author" >
 
-       <label for="genre">Genre:</label>
-       <select name="genre" id="genre">
-           <option value="default">Choose Genre</option>
-           <option value="textbooks">Textbooks</option>
-           <option value="drama">Drama</option>
-           <option value="history">History</option>
-           <option value="poetry">Poetry</option>
-           <option value="fiction">Fiction</option>
-           <option value="fantasy">Fantasy</option>
-           <option value="sci-fi">Sci-fi</option>
-       </select>
-       <input type="text" id="genre-input" name="genre" value="select" >
-
        <label for="pages">Pages:</label>
        <input type="number" id="pages-input" name="pages" >
        
-       <form method="post" enctype="multipart/form-data">
-        <label for="file">File</label>
+      
+
+       <form id="form-file" method="post" enctype="multipart/form-data">
+        <label for="file">File:</label>
         <input id="file" name="file" type="file" />
-        <button>Upload</button>
-      </form>
+       </form>
+
+       <!-- <div> 
+        <input type="radio" id="read" name="read-input" value="Read" > 
+         <label for="read-input">Read</label>
+     
+        <input type="radio" id="unread" name="read-input" value="Unread" > 
+        <label for="read-input">Unread</label>
+       </div> -->
 
      <button type="submit" id="add-book">Add book</button>
    </form>
@@ -75,81 +71,12 @@
 
 
   <main>
-<div class="genre">
-<h1>Books</h1>
-<div id="textbooks">
-    <div><h1>Textbooks</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="textbooks.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-textbooks"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-    </div>
-</div>
-<div id="drama">
-    <div><h1>Drama</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="drama.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-drama"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-    </div>
-</div>
-<div id="history">
-    <div><h1>History</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="history.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon"height="30px" width="30px"></a></li>
-            <li class="add add-history"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-</div>
-</div>
-<div id="poetry">
-    <div><h1>Poetry</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="poetry.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-poetry"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>  
-    </div>
-</div>
-<div id="fiction">
-    <div><h1>Fiction</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="fiction.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-fiction"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-    </div>
-</div>
-<div id="fantasy">
-    <div><h1>Fantasy</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="fantasy.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-fantasy"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-    </div>
-</div>
-<div id="sci-fi">
-    <div><h1>Sci-fi</h1></div>
-    <div class="book-setting">
-        <ul>
-            <li><a href="sci-fi.html"><img src="images/bookshelf.png" alt="textbook list icon" height="30px" width="30px"></a></li>
-            <li><a href=""><img src="images/share-variant.png" alt="share icon" height="30px" width="30px"></a></li>
-            <li class="add add-sci-fi"><a href=""><img src="images/book-plus.png" alt="add new book icon" height="30px" width="30px"></a></li>
-        </ul>
-    </div>
-</div>
-</div>
+  <div></div>
 
-<div class="new-additions">
+
+
+  </main>
+  <div class="new-additions">
     <h1>New additions</h1>
     <div class="trending">
         <iframe src="books/ItStartswithUs.pdf" frameborder="0" height="200rem" width="150rem"></iframe>
@@ -164,16 +91,14 @@
     </div>
 </div>
 
-  </main>
-
   
   <div id="flowers"><img src="images/pink-flowers-7004965_1280.png" alt=""></div>
   <footer>
    
     <ul>
       <li>&copy;2024 Catangel007</li>
-      <li><a href="">Contact us</a></li>
-      <li><a href=""> About</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+      <li><a href="about.html"> About</a></li>
     </ul>
     
   </footer>

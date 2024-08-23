@@ -1,5 +1,5 @@
 body{
-      background: hsl(54, 54%, 90%); 
+      background: hsl(49, 53%, 90%); 
     
  width: 100vw;
    margin: 0;
@@ -13,14 +13,14 @@ body{
      letter-spacing: 3px;
      font-size:1.5rem;
      justify-content: space-between;
-     align-items: center;   
+     align-items: center;
+     padding-left: 0.7rem;   
 }
 
 header{
     display: flex;
     background-color:hsl(57, 100%, 91%);
     justify-content: space-between;
-    padding: 1rem;
     width: 100vw
 }
 
@@ -42,7 +42,7 @@ nav ul{
 input{
     border:2px solid rgb(214, 148, 49);
     border-radius: 12px;
-    width: 90%;
+    width: 100%;
 }
 
 h1{
@@ -55,52 +55,12 @@ nav button{
     border:2px solid hsl(36, 67%, 52%);
 }
 
-main>h1{
-    text-align: center;
-    color: rgb(214, 148, 49);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     letter-spacing: 3px;
-     font-size: 3rem;
-}
 
-#textbooks,#drama,#history,#poetry,#fiction,#fantasy,#sci-fi{
-    width: 70vw;
-    height: min(25vh,15rem);
-    margin: 50px;
-    box-shadow:5px 5px 20px gray;
-    border-radius: 20px;
-    display: grid;
-    grid-template:1fr .5fr/ 1fr;
-}
-
-#textbooks{ 
-    background: url("images/science.jpg") ;   
-}
-
-#drama{ 
-    background: url("images/akelex-one-final-repentance.jpg") ;
-}
-
-#history{
-    background: url("images/history.jpg") ;
-}
-
-#poetry{
-    background: url("images/poetry.jpg") ;
-}
-
-#fiction{
-    
-    background: url("images/fiction.jpg") ;
-}
-#fantasy{
-    
-    background: url("images/dragon.jpg") ;
-}
-#sci-fi{
-    
-    background: url("images/sci-fi.jpg") ;
-}
+ main{
+    margin: left 10%; 
+    margin-right: 10%;
+   
+ }
 
 footer{
     height: 10vh;
@@ -136,6 +96,8 @@ h1+button{
     border: 2px solid hsl(36, 67%, 52%);
     height: 3rem;
     width: 4rem; 
+    position: relative;
+    right: 2rem;
 }
 
 a{
@@ -157,36 +119,21 @@ footer ul{
     width: 100%; 
     justify-content: space-evenly; 
 }
-
-.book-setting{
-    background-color: aliceblue;
-    opacity: .40;
-    grid-row:2/3;
-    grid-column: 1/2;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px; 
-    width: 100%;
-}
-
 main{
-    display: grid;
-    grid-template: 1fr/ 1fr .5fr;
+   margin: 0;
+    height: 50vh;
 }
-.genre{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
+
+
 .new-additions{
-   
-    grid-column: 2/3;
-    grid-row: 1/2;
-    background-color:blanchedalmond; 
+    background-color:rgb(254, 237, 212); 
    
 }
- iframe{
-    margin: 2rem 0;
-
-
+ .trending{
+    height: 20rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
  }
 
  dialog{
@@ -196,9 +143,11 @@ main{
     width: 50vw;
     border-radius: 20px;
     padding: 2rem;
+    overflow: hidden;
     
+    
+  
    
-
  }
 
  .book-display{
@@ -211,26 +160,37 @@ main{
    
  }
 
- form{
-    width: 60%;
-    padding-left: 1.5rem;
-    padding-top: 4rem;
+ form#pop-up{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+   
+    margin-left:1rem ;
+   
+     
  }
 
+ 
  #add-book{
     border: 0;
     border-radius: 10px;
     height: 40px;
-    width: 80px;
+    width: 90%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color:hsl(36, 67%, 52%) ;
     margin-top: 1rem;
     color: white;
+    margin-left: 1rem;
  }
 
   input{
-    padding-left: 5px;
-    height: 1.5rem;
+  width: 100%;
+   height: 1.5rem;
+   
+   
+  }
+  #file{
+    color:white;
   }
   input#file{
     padding-left: 5px;
@@ -251,18 +211,30 @@ button.close{
     height: 20px;
     width: 20px;
    position: relative;
-    left: 55%;
+    left: 90%;
 }
 
-.banner{
-    height: 20%;
-    width: 100vw;
-    border: 1px solid black;
+
+.book{
+ height:5rem ;
+ width:2.5rem ;
+ background-color:hsl(57, 100%, 91%);
 }
-.banner img{
-    width: 100vw;
+
+.book:last-child{
+ width: 50px;
+ background-color: green;
+ border: none;
+ border-radius: 4px;
 }
-.book-shelf{
-    height: auto;
-    background-color: hsl(54, 54%, 92%);
+
+.book:first-child{
+ width: 50px;
+ background-color: red;
+ border: none;
+ border-radius: 4px;
 }
+
+
+
+
