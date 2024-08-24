@@ -21,8 +21,7 @@
             <input type="text" placeholder="Search library">
         </li>
         <li> <a href="https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155"><img src="images/cart.png" alt="shopping button" height="30px" width="30px"></a> </li>
-       
-    </ul>
+        </ul>
 </nav>
   </header>
   
@@ -38,7 +37,7 @@
 <dialog >
     
     <button class="close">x</button>
-   <form id="pop-up" method="dialog">
+   <form id="pop-up" method="dialog" id="form-file" enctype="multipart/form-data">
        <label for="title">Title:</label>
        <input type="text" id="title-input" name="title"  autofocus>
 
@@ -48,12 +47,10 @@
        <label for="pages">Pages:</label>
        <input type="number" id="pages-input" name="pages" >
        
-      
 
-       <form id="form-file" method="post" enctype="multipart/form-data">
         <label for="file">File:</label>
         <input id="file" name="file" type="file" accept=".jpg, .jpeg, .png, .pdf" />
-       </form>
+      
 
        <!-- <div> 
         <input type="radio" id="read" name="read-input" value="Read" > 

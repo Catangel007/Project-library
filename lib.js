@@ -70,7 +70,7 @@ add.addEventListener("click",() => {
 });
 
 closeBtn.addEventListener("click",()=>{
-  input.reset()
+  document.getElementById("pop-up").reset()
    dialog.close();
     
 });
