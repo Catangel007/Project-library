@@ -65,7 +65,7 @@ function displayBook (){
     deleteBtn.textContent="Delete";
     readBtn.textContent = "Read";
     mainPage.textContent = paperBack;
-    paperBack.textContent= `${Book.info()}`;
+    paperBack.textContent= `${myLibrary.info()}`;
   })
 
 } 
@@ -96,16 +96,16 @@ closeBtn.addEventListener("click",()=>{
 addBook.addEventListener("click",(event)=>{
   event.preventDefault();
  addBookToLibrary();
- document.getElementById("pop-up").reset();
+ //document.getElementById("pop-up").reset();
  dialog.close();
 })
 
 deleteBtn. addEventListener("click",()=>{
-  delete myLibrary [book];
+  // delete myLibrary [book];
   mainPage.textContent = paperBack.delete();
 })
 
 readBtn.addEventListener("click",()=>{
-  let bookView = Book.file;
+  let bookView = myLibrary.file;
   window.open (bookView, "resizeable, scrollbar");
 })
