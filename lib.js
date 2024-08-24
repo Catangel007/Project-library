@@ -29,7 +29,7 @@ let myLibrary = [];
   
    let book = new Book(titleInput.value,authorInput.value,pagesInput.value,fileInput.value)
 
-       myLibrary === myLibrary.push(book);
+        myLibrary.push(book);
        console.log(book);
        displayBook()
        return book;
@@ -42,12 +42,12 @@ function displayBook (){
   myLibrary.forEach((book)=>{
     console.log(book);
     
-     const paperBack= document. createElement("div");
+     let paperBack= document. createElement("div");
      const deleteBtn = document .createElement("button");
      const readBtn = document. createElement("button");
 
 
-     paperBack === book;
+     paperBack = book;
 
 
     paperBack.setAttribute("class", "book");
@@ -95,7 +95,7 @@ closeBtn.addEventListener("click",()=>{
 
 addBook.addEventListener("click",(event)=>{
   event.preventDefault();
- addBookToLibrary();
+ addBookToLibrary(addBook.input);
  //document.getElementById("pop-up").reset();
  dialog.close();
 })
