@@ -5,6 +5,7 @@ let pagesInput = document . querySelector("#pages-input");
 let fileInput = document . querySelector("#file");
 
 
+     
 
 
 function Book(title,author, pages, file){
@@ -21,59 +22,62 @@ function Book(title,author, pages, file){
 
 
 
-
-
 let myLibrary = [];
 
  function addBookToLibrary(){
   
-   let book = new Book(titleInput.value,authorInput.value,pagesInput.value,fileInput.value)
+   let book = new Book(titleInput.value, authorInput.value, pagesInput.value, fileInput.value);
 
         myLibrary.push(book);
-       console.log(book);
-       displayBook()
-       return book;
+       
+       displayBook(book);
+       
  } 
  
  
  
 function displayBook (){
-
-  myLibrary.forEach((book)=>{
-    console.log(book);
+   
+  for(let i = 0 ; i < myLibrary.length; i++){
     
-     let paperBack= document. createElement("div");
-     const deleteBtn = document .createElement("button");
-     const readBtn = document. createElement("button");
+
+    const paperBack = document.createElement("div");
+
+    paperBack.className="book-cap";
+    const deleteBtn = document .createElement("button");
+    const readBtn = document. createElement("button");
+
+    deleteBtn.className="delete";
+    readBtn.className= "read";
+
+    paperBack.innerText = `${myLibrary[i].title.innerText},${myLibrary[i].author.innerText},${myLibrary[i].pages.innerText},${myLibrary[i].file.innerText}`
 
 
-     paperBack = book;
-
-
-    paperBack.setAttribute("class", "book");
-  
-  
-    paperBack. appendChild(deleteBtn);
-    paperBack. appendChild(readBtn);
+    paperBack.appendChild(deleteBtn);
+    paperBack.appendChild(readBtn);
     mainPage.appendChild(paperBack);
-
-
-    deleteBtn.classList.add("delete");
-    readBtn.classList.add("read");
-
 
     deleteBtn.textContent="Delete";
     readBtn.textContent = "Read";
     mainPage.textContent = paperBack;
-    paperBack.textContent= `${myLibrary.info()}`;
-  })
 
-} 
 
+    deleteBtn. addEventListener("click",()=>{
+      // delete myLibrary [book];
+      mainPage.textContent = paperBack.delete();
+    })
+    
+    readBtn.addEventListener("click",()=>{
+      let bookView = myLibrary.file;
+      window.open (bookView, "resizeable, scrollbar");
+    })
+  }
+  }
+  
 
 // DOM manipulation
 
-const add = document. querySelector(".add img");
+const showDialog = document. querySelector(".add img");
 const dialog= document. querySelector("dialog");
 const closeBtn = document. querySelector(".close");
 const input = document.querySelectorAll("input");
@@ -82,7 +86,7 @@ const mainPage = document.querySelector("main")
 
 
 
-add.addEventListener("click",() => {
+showDialog.addEventListener("click",() => {
     dialog.showModal()
 });
 
@@ -95,17 +99,8 @@ closeBtn.addEventListener("click",()=>{
 
 addBook.addEventListener("click",(event)=>{
   event.preventDefault();
- addBookToLibrary(addBook.input);
- //document.getElementById("pop-up").reset();
+ addBookToLibrary();
+ document.getElementById("pop-up").reset();
  dialog.close();
 })
 
-deleteBtn. addEventListener("click",()=>{
-  // delete myLibrary [book];
-  mainPage.textContent = paperBack.delete();
-})
-
-readBtn.addEventListener("click",()=>{
-  let bookView = myLibrary.file;
-  window.open (bookView, "resizeable, scrollbar");
-})
