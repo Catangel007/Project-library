@@ -29,31 +29,46 @@ let myLibrary = [];
   
    let book = new Book(titleInput.value,authorInput.value,pagesInput.value,fileInput.value)
 
-       myLibrary = myLibrary.push(book);
+       myLibrary === myLibrary.push(book);
        console.log(book);
-
+       displayBook()
+       return book;
  } 
  
  
  
+function displayBook (){
 
   myLibrary.forEach((book)=>{
     console.log(book);
-    book= document. createElement("div");
-    book.setAttribute("class", "book");
-   const deleteBtn = document .createElement("button");
-   const readBtn = document. createElement("button");
-    book. appendChild(deleteBtn);
-    book. appendChild(readBtn);
+    
+     const paperBack= document. createElement("div");
+     const deleteBtn = document .createElement("button");
+     const readBtn = document. createElement("button");
+
+
+     paperBack === book;
+
+
+    paperBack.setAttribute("class", "book");
+  
+  
+    paperBack. appendChild(deleteBtn);
+    paperBack. appendChild(readBtn);
+    mainPage.appendChild(paperBack);
+
+
     deleteBtn.classList.add("delete");
     readBtn.classList.add("read");
+
+
     deleteBtn.textContent="Delete";
     readBtn.textContent = "Read";
-    mainPage.textContent = book;
-    book.textContent= Book.info()
+    mainPage.textContent = paperBack;
+    paperBack.textContent= `${Book.info()}`;
   })
 
-
+} 
 
 
 // DOM manipulation
@@ -64,6 +79,8 @@ const closeBtn = document. querySelector(".close");
 const input = document.querySelectorAll("input");
 const addBook = document.querySelector("#add-book");
 const mainPage = document.querySelector("main")
+
+
 
 add.addEventListener("click",() => {
     dialog.showModal()
@@ -79,6 +96,16 @@ closeBtn.addEventListener("click",()=>{
 addBook.addEventListener("click",(event)=>{
   event.preventDefault();
  addBookToLibrary();
- dialog.close()
+ document.getElementById("pop-up").reset();
+ dialog.close();
 })
 
+deleteBtn. addEventListener("click",()=>{
+  delete myLibrary [book];
+  mainPage.textContent = paperBack.delete();
+})
+
+readBtn.addEventListener("click",()=>{
+  let bookView = Book.file;
+  window.open (bookView, "resizeable, scrollbar");
+})
