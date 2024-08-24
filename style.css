@@ -215,20 +215,20 @@ button.close{
 }
 
 
-.book{
- height:5rem ;
- width:2.5rem ;
- background-color:hsl(57, 100%, 91%);
+.book-cap{
+ height:15rem ;
+ width:10rem ;
+ background-color:hsl(57, 34%, 55%);
 }
 
-.book:last-child{
+.read{
  width: 50px;
  background-color: green;
  border: none;
  border-radius: 4px;
 }
 
-.book:first-child{
+.delete{
  width: 50px;
  background-color: red;
  border: none;
