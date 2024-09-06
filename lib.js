@@ -8,13 +8,15 @@ let fileInput = document . querySelector("#file");
      
 
 
-function Book(title,author, pages, file){
+class Book{
 
+  constructor(title,author, pages, file){
   this.title = title;
   this.author = author;
   this.pages = pages;
   this.file = file;
-  this.info = function (){
+}
+  info(){
     return ` ${this.name} by ${this.author}, ${this.pages}pages.`
   }
 }
