@@ -216,9 +216,15 @@ button.close{
 
 
 .book-cap{
- height:15rem ;
+ height:10rem ;
  width:10rem ;
- background-color:hsl(57, 34%, 55%);
+ background-image:url("images/mona-eendra-vC8wj_Kphak-unsplash.jpg");
+ padding: 2em;
+ text-align: center;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-weight: 900;
+ margin: 2em;
+ 
 }
 
 .read{

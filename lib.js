@@ -50,7 +50,7 @@ function displayBook (){
     deleteBtn.className="delete";
     readBtn.className= "read";
 
-    paperBack.innerText = `${myLibrary[i].title},${myLibrary[i].author},${myLibrary[i].pages},${myLibrary[i].file}`
+    paperBack.innerText = `Book:${myLibrary[i].title}\n Author:${myLibrary[i].author}\n Pages:${myLibrary[i].pages}\n\n${myLibrary[i].file}`
 
 
     paperBack.appendChild(deleteBtn);
@@ -64,7 +64,7 @@ function displayBook (){
 
     deleteBtn. addEventListener("click",()=>{
       // delete myLibrary [book];
-      mainPage.textContent = paperBack.delete();
+      mainPage.textContent = delete(paperBack);
     })
     
     readBtn.addEventListener("click",()=>{
