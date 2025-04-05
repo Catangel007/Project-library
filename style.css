@@ -126,9 +126,9 @@ main{
 
 
 .new-additions{
-    background-color:rgb(254, 237, 212); 
-   
+    background-color:rgb(254, 237, 212);  
 }
+
  .trending{
     height: 20rem;
     width: 100vw;
@@ -143,11 +143,7 @@ main{
     width: 50vw;
     border-radius: 20px;
     padding: 2rem;
-    overflow: hidden;
-    
-    
-  
-   
+    overflow: hidden; 
  }
 
  .book-display{

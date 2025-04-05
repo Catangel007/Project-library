@@ -37,19 +37,19 @@
 <dialog >
     
     <button class="close">x</button>
-   <form id="pop-up" method="dialog" id="form-file" enctype="multipart/form-data">
-       <label for="title">Title:</label>
-       <input type="text" id="title-input" name="title"  autofocus>
+   <form id="pop-up" method="dialog" id="form-file" enctype="multipart/form-data" novalidate>
+       <label for="title"  required aria-label="*">Title:</label>
+       <input type="text" id="title-input" name="title"  autofocus minlength="20" maxlength="200" required>
 
-       <label for="author">Author:</label>
-       <input type="text" id="author-input" name="author" >
+       <label for="author" required aria-label="*">Author:</label>
+       <input type="text" id="author-input" name="author" required >
 
-       <label for="pages">Pages:</label>
-       <input type="number" id="pages-input" name="pages" >
+       <label for="pages" required aria-label="*">Pages:</label>
+       <input type="number" id="pages-input" name="pages" min="1" max="10000" required>
        
 
-        <label for="file">File:</label>
-        <input id="file" name="file" type="file" accept=".jpg, .jpeg, .png, .pdf" />
+        <label for="file" required aria-label="*">File:</label>
+        <input id="file" name="file" type="file" required accept=".jpg, .jpeg, .png, .pdf" />
       
 
        <!-- <div> 
